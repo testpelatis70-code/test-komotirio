@@ -6,6 +6,8 @@
   --accent: #6b2d5c;
   --accent-hover: #55224a;
   --select: #e9dde6;
+  --button: #1f5c3f;
+  --button-hover: #174a32;
   --line: #c9d1cd;
   --radius: 10px;
 }
@@ -94,7 +96,7 @@ button {
   font: inherit;
   font-weight: 600;
   color: #fff;
-  background: var(--accent);
+  background: var(--button);
   border: 0;
   border-radius: 8px;
   padding: 0.875rem 1rem;
@@ -102,7 +104,7 @@ button {
   transition: background-color 150ms ease-out;
 }
 
-button:hover { background: var(--accent-hover); }
+button:hover { background: var(--button-hover); }
 
 button:focus-visible { outline: 3px solid var(--select); outline-offset: 2px; }
 
