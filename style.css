@@ -87,7 +87,7 @@ input:focus-visible, textarea:focus-visible {
   box-shadow: 0 0 0 3px var(--select);
 }
 
-.hidden { position: absolute; left: -9999px; }
+.botcheck { display: none; }
 
 button {
   width: 100%;

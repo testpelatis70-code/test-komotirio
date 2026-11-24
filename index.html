@@ -20,25 +20,24 @@
 
     <section class="booking" aria-labelledby="booking-title">
       <h2 id="booking-title">Κλείστε ραντεβού</h2>
-      <form name="kratisi" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="kratisi">
-        <p class="hidden">
-          <label>Μην το συμπληρώσετε: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
-        </p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="572dae94-bc1f-4a1f-9d23-8335d4de2eca">
+        <input type="hidden" name="redirect" value="https://test-komotirio.netlify.app/thanks.html">
+        <input type="checkbox" name="botcheck" class="botcheck" tabindex="-1" autocomplete="off">
 
         <div class="field">
           <label for="name">Όνομα</label>
-          <input id="name" name="name" type="text" autocomplete="name" required>
+          <input id="name" name="Όνομα"type="text" autocomplete="name" required>
         </div>
 
         <div class="field">
           <label for="phone">Τηλέφωνο</label>
-          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+          <input id="phone" name="Τηλέφωνο"type="tel" inputmode="tel" autocomplete="tel" required>
         </div>
 
         <div class="field">
           <label for="message">Μήνυμα</label>
-          <textarea id="message" name="message" placeholder="π.χ. κούρεμα, Σάββατο πρωί"></textarea>
+          <textarea id="message" name="Μήνυμα"placeholder="π.χ. κούρεμα, Σάββατο πρωί"></textarea>
         </div>
 
         <button type="submit">Αποστολή κράτησης</button>
