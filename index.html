@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="el">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Κομμωτήριο</title>
+  <meta name="description" content="Test Κομμωτήριο: κλείστε ραντεβού online.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <section class="intro">
+      <h1>Test Κομμωτήριο</h1>
+      <p>Κούρεμα, βαφή και χτένισμα στη γειτονιά σας. Αφήστε μας το όνομα και το τηλέφωνό σας και θα σας καλέσουμε για να κλείσουμε μαζί την ώρα που σας βολεύει.</p>
+    </section>
+
+    <section class="booking" aria-labelledby="booking-title">
+      <h2 id="booking-title">Κλείστε ραντεβού</h2>
+      <form name="kratisi" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="kratisi">
+        <p class="hidden">
+          <label>Μην το συμπληρώσετε: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+        </p>
+
+        <div class="field">
+          <label for="name">Όνομα</label>
+          <input id="name" name="name" type="text" autocomplete="name" required>
+        </div>
+
+        <div class="field">
+          <label for="phone">Τηλέφωνο</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required>
+        </div>
+
+        <div class="field">
+          <label for="message">Μήνυμα</label>
+          <textarea id="message" name="message" placeholder="π.χ. κούρεμα, Σάββατο πρωί"></textarea>
+        </div>
+
+        <button type="submit">Αποστολή κράτησης</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
